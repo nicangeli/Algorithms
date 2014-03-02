@@ -17,7 +17,20 @@ def search(array, key):
 	return -1
 
 if __name__ == "__main__":
-	index = search([1, 2, 3, 5, 7, 9], 2)
+	a = [1, 2, 3, 6, 8, 19, 20, 23, 42, 67, 91]
+	print "Searching through" + str(a) + " for 2"
+	index = search(a, 2)
 	print index
 
+	print "Searching through" + str(a) + " for 9"
+	index = search(a, 9)
+	print index
+
+	print "Searching through" + str(a) + " for 23"
+	index = search(a, 23)
+	print index
+
+	print "Searching through" + str(a) + " for 101"
+	index = search(a, 101)
+	print index
 
